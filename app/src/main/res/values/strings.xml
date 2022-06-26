@@ -2,4 +2,36 @@
     <string name="app_name">exam_mate</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="Continue">Continue</string>
+    <string name="Reset">Reset</string>
+    <string name="Skip">Nah,Skip</string>
+    <string name="get_started">Get Started</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="preference_screen_header">One last thing we end the setup</string>
+    <string name="preference_sub_header">Tell us about your preferences</string>
+    <string-array name="subjects">
+        <item>GK</item>
+        <item>Maths</item>
+        <item>Physics</item>
+        <item>Computer</item>
+        <item>Chemistry</item>
+        <item>History</item>
+        <item>Biology</item>
+        <item>Geography</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="classes">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+
 </resources>
