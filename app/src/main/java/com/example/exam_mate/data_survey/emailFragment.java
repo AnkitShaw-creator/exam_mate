@@ -3,11 +3,13 @@ package com.example.exam_mate.data_survey;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.exam_mate.R;
 
@@ -22,6 +24,8 @@ public class emailFragment extends Fragment {
     private String mParam2;
 
     private Button nextButton;
+    private EditText email, password, name;
+    private SurveyModel model;
 
     public emailFragment() {
         // Required empty public constructor
@@ -33,10 +37,16 @@ public class emailFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_email, container, false);
-
+        model = new ViewModelProvider(requireActivity()).get(SurveyModel.class);
+        name = v.findViewById(R.id.UserName);
+        email = v.findViewById(R.id.LoginEmail);
+        password = v.findViewById(R.id.LoginPassword);
         nextButton = v.findViewById(R.id.to_prefernce_button);
 
         nextButton.setOnClickListener(view -> {
+            model.setEmail(email.getText().toString());
+            model.setPassword(password.getText().toString());
+            model.setUserName(name.getText().toString());
             getParentFragmentManager().beginTransaction()
                     .setReorderingAllowed(true)
                     .replace(R.id.survey_fragment_container, new preferenceFragment(), null)
