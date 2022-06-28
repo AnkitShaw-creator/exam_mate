@@ -52,7 +52,6 @@ public class emailFragment extends Fragment {
                     .replace(R.id.survey_fragment_container, new preferenceFragment(), null)
                     .commit();
         });
-
         return v;
     }
 }
