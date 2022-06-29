@@ -41,17 +41,13 @@ public class emailFragment extends Fragment {
         name = v.findViewById(R.id.UserName);
         email = v.findViewById(R.id.LoginEmail);
         password = v.findViewById(R.id.LoginPassword);
-        nextButton = v.findViewById(R.id.to_prefernce_button);
 
-        nextButton.setOnClickListener(view -> {
+        /*nextButton.setOnClickListener(view -> {
             model.setEmail(email.getText().toString());
             model.setPassword(password.getText().toString());
             model.setUserName(name.getText().toString());
-            getParentFragmentManager().beginTransaction()
-                    .setReorderingAllowed(true)
-                    .replace(R.id.survey_fragment_container, new preferenceFragment(), null)
-                    .commit();
-        });
+
+        });*/
         return v;
     }
 }

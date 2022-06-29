@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Exam_mate">
         <activity
-            android:name=".homeActivity"
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".surveyActivity"
+            android:name=".data_survey.SurveyActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
